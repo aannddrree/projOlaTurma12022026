@@ -1,4 +1,4 @@
-package org.example.models;
+package org.example.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -9,18 +9,18 @@ import javax.validation.constraints.NotEmpty;
 public class Conta {
 
     @Id
-    private int id;
+    private String _id;
     @NotEmpty
     private String descricao;
     @NotEmpty
     private double valor;
 
-    public int getId() {
-        return id;
+    public String getId() {
+        return _id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(String _id) {
+        this._id = _id;
     }
 
     public String getDescricao() {
